@@ -1,6 +1,6 @@
 export const users = {
   validUser: {
     username: 'student',
-    password: 'password'
+    password:'Password123'
   }
 };
