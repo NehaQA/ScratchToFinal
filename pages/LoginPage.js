@@ -17,4 +17,10 @@ export class LoginPage {
     await this.page.fill(this.passwordInput, password);
     await this.page.click(this.loginButton);
   }
+
+  async invalidLogin(username, password) {
+    await this.page.fill(this.usernameInput, username);
+    await this.page.fill(this.passwordInput, password);
+    await this.page.click(this.loginButton);
+  }
 }
