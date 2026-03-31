@@ -9,18 +9,18 @@ export class LoginPage {
   }
 
   async navigate() {
-    await this.page.goto('https://practicetestautomation.com/practice-test-login/');
+    await this.page.goto('/practice-test-login/'); // get the base URL from playwright.config.js
+    
   }
 
+  
   async login(username, password) {
     await this.page.fill(this.usernameInput, username);
     await this.page.fill(this.passwordInput, password);
+
+
     await this.page.click(this.loginButton);
   }
 
-  async invalidLogin(username, password) {
-    await this.page.fill(this.usernameInput, username);
-    await this.page.fill(this.passwordInput, password);
-    await this.page.click(this.loginButton);
-  }
+  
 }

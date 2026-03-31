@@ -1,6 +1,6 @@
 export const users = {
   validUser: {
-    username: 'student',
-    password:'Password123'
-  }
+    username: process.env.TEST_USERNAME,
+    password: process.env.TEST_PASSWORD
+  },
 };
