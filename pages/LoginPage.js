@@ -9,8 +9,7 @@ export class LoginPage {
   }
 
   async navigate() {
-    await this.page.goto('/practice-test-login/'); // get the base URL from playwright.config.js
-    
+  await this.page.goto('/practice-test-login/'); // get the base URL from playwright.config.js
   }
 
   
